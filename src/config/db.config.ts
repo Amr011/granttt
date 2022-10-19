@@ -14,6 +14,7 @@ export default async function connectDatabase(): Promise<void> {
       username: dbConfig.username,
       password: dbConfig.password,
       database: dbConfig.database,
+      ssl: true,
       entities: ['src/entity/**/*.[tj]s'],
       migrations: ['src/migration/**/*.[tj]s'],
       subscribers: ['src/subscriber/**/*.[tj]s'],
