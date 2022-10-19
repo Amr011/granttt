@@ -25,7 +25,7 @@ async function ServerLancher(): Promise<void> {
       app.use(morgan('dev'))
       app.use(cors())
 
-      // Error Handling
+      // Error  Handling
       app.use(errorHandler)
 
       // Router Config
