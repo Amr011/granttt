@@ -28,9 +28,6 @@ async function ServerLancher(): Promise<void> {
       // Error Handling
       app.use(errorHandler)
 
-      // Favicon Config -- Not Loading
-      app.use(favicon(path.join(__dirname, 'public', 'icons', 'favicon.ico')))
-
       // Router Config
       app.use('/api/v1', router)
 
