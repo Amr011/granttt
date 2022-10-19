@@ -1,4 +1,4 @@
-# node-ts starter
+## fast-taxi-app
 
 Steps to run this project:
 
