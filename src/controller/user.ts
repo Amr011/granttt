@@ -14,6 +14,7 @@ import { otpConfig } from '../utils/constants'
 import generateOTPNumber from '../utils/otp-generate'
 import { createNewOTP, verifyOTP } from '../utils/otp-without-db'
 import { userSignToken } from '../middleware/auth'
+import { sendSMS } from '../utils/sendSMS'
 
 // Controller Layer
 export default class userController {
@@ -104,7 +105,7 @@ export default class userController {
             otpConfig.optAlgorithem
          )
          // Send Otp SMS Code Goes Here
-
+         await sendSMS(generatedOTP, existedUser.phone)
          console.log(generatedOTP)
          return res.status(200).json({
             success: true,
