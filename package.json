@@ -42,7 +42,7 @@
         "reflect-metadata": "^0.1.13",
         "serve-favicon": "^2.5.0",
         "ts-node": "3.3.0",
-        "typeorm": "^0.2.41",
+        "typeorm": "^0.3.26",
         "typescript": "3.3.3333"
     }
 }
